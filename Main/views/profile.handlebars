@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Create a New Event:</h3>
+
+    <form class="form new-project-form">
+      <div class="form-group">
+        <label for="project-name">event name:</label>
+        <input class="form-input" type="text" id="project-name" name="project-name" />
+      </div>
+      <div class="form-group">
+        <label for="datepicker">date of event:</label>
+        <input class="form-input" type="text" id="datepicker" name="datepicker" />
+      </div>
+       <div class="form-group">
+        <label for="timepicker">time of event: (mst)</label>
+        <input class="form-input timepicker" type="text" id="timepicker" name="timepicker" />
+      </div>
+      <div class="form-group">
+        <label for="project-location">location:</label>
+        <textarea class="form-input" id="project-location" name="project-location"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">description:</label>
+        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if projects.length}}
+  <div class="col-md-6 project-list">
+    <h3>Current Projects:</h3>
+
+    {{#each projects as |project|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>
