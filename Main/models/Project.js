@@ -36,7 +36,7 @@ Project.init(
       allowNull: false,
     },
     picture_url:{
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT('long'),
       
     },
     user_id: {

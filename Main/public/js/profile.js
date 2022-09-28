@@ -6,11 +6,12 @@ const newFormHandler = async (event) => {
   const location = document.querySelector('#project-location').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
   const time_of_event = document.querySelector('#timepicker').value.trim();
+  const picture_url = document.querySelector('#picture-url').value.trim();
 
   if (name && date_of_event && time_of_event&& location && description) {
     const response = await fetch(`/api/projects`, {
       method: 'POST',
-      body: JSON.stringify({ name, date_of_event, time_of_event, location, description }),
+      body: JSON.stringify({ name, date_of_event, time_of_event, location, description, picture_url }),
       headers: {
         'Content-Type': 'application/json',
       },
