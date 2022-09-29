@@ -12,6 +12,7 @@
     <h3 class="text-center">Your Events:</h3>
     
     {{#if projects.length}}
+    <div class="project-list">
     {{#each projects as |project|}}
     <div class="row mb-2">
       <div class="col-md-8">
@@ -22,9 +23,10 @@
       </div>
     </div>
     {{/each}}
+    </div>
   {{/if}}
   </div>
   
 
 
-<script src="./js/profile.js"></script>
+<script src="./js/myevents.js"></script>
