@@ -1,15 +1,10 @@
 <div class="text-center">
   <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
+  <p> {{time_of_event}} on {{date_of_event}}</p>
   <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    {{!-- <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed --}}
-  </p>
+  <p>hosted by {{user.name}}</p>
   <img src="{{picture_url}}" alt="picture">
-
+<br>
   <iframe
   width="600"
   height="450"
@@ -20,8 +15,4 @@
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDd6Zz50zRFAF23xF_enGMHHT_QTUxsMqM
     &q={{location}}">
 </iframe>
-
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
 </div>

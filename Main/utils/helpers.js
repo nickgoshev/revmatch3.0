@@ -1,3 +1,4 @@
+const moment = require('moment');
 module.exports = {
   format_date: (date) => {
     // Format date as MM/DD/YYYY
@@ -19,4 +20,7 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  currentDate: () => {
+    return moment().format('L');
+  }
 };
