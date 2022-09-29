@@ -25,10 +25,10 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        {{!-- <a href="/create">create</a>|
-        <a href="/myevents">my events</a>| --}}
+        <a href="/create">create event</a> |
+        <a href="/myevents">my events</a> |
 
-        <a href="/profile">profile</a> |
+        {{!-- <a href="/profile">profile</a> | --}}
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a> |
