@@ -7,13 +7,13 @@ header, .project:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #67b5d9;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: #59add4;
   text-decoration: underline;
 }
 
@@ -21,4 +21,8 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+body {
+  background-color: rgb(196, 201, 214);
 }
