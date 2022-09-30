@@ -1,6 +1,6 @@
 CAR MEETS
 
-We have created place where car entuathist are able to organize car meets. 
+We have created a place where car entuathist are able to organize car meets. 
 
 
 
