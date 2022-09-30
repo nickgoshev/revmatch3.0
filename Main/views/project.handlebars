@@ -1,10 +1,16 @@
 <body>
+  <div class="row">
+    <div class="col-md">
 <div class="text-center">
   <h2>{{name}}</h2>
   <p> {{time_of_event}} on {{date_of_event}}</p>
   <p>{{description}}</p>
   <p>hosted by {{user.name}}</p>
-  <img src="{{picture_url}}" alt="picture">
+  </div>
+  <div class="col-md">
+  <img src="{{picture_url}}" alt="picture" style="width:300px;height200px">
+  </div>
+  </div>
 <br>
   <iframe
   width="600"

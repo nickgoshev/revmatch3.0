@@ -39,7 +39,11 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/myevents');
     } else {
+      if (password.length<8){
+        alert("password must be at least 8 characters")
+      }else{
       alert(response.statusText);
+      }
     }
   }
 };
